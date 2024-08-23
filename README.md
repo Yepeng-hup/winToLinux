@@ -1,2 +1,2 @@
 # winToLinux
-win to linux bakup
+win data cp MV to linux system
