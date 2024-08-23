@@ -1,0 +1,23 @@
+# win to linux config file
+
+win:
+# 要转移备份的数据目录
+  mv_data_src_path:
+    - "E:\\py-project\\cptest002"
+    - "E:\\py-project\\cptest"
+  # 迁移的临时目录
+  win_data_tmp: "E:\\py-project\\tmp"
+linux:
+  #是否开启秘钥读取，默认为密码
+  use_key: true
+  ssh_host: "127.0.0.1"
+  ssh_port: 22
+  ssh_user: root
+  ssh_passwd: xxxx
+  #秘钥路径(私钥要用puttygen工具转换为ppk类型的秘钥)
+  ssh_key_path: "E:\\xxppk.ppk"
+  #目标Linux系统的数据目录
+  mv_data_dest_path: "/opt/win_bakup"
+log:
+  use_log: ".\\wintolinux.log"
+
